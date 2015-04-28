@@ -1,0 +1,33 @@
+<template name="itemIndex">
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">题库查询</h3>
+    </div>
+    <div class="panel-body">
+      <form class="form-horizontal" id="qustIndex">
+        <div class="form-group">
+           <label for="searchEpisode" class="col-sm-1 control-label text-primary">查找期数</label>
+           <div class="col-sm-2">
+             <input class="form-control" type="text"  id="searchEpisode" placeholder="查找期数" valve = "" />   </div>
+           <label for="searchKeyStr" class="col-sm-1 control-label text-primary">关键字</label>
+           <div class="col-sm-2">
+             <input class="form-control" type="text" id="searchKeyStr" placeholder="查找关键字" valve = "" />
+           </div>
+           <label for="orderKey" class="col-sm-offset-1 col-sm-1 control-label text-primary">排序</label>
+           <div class="col-sm-2">
+             <select class="form-control" name="orderKey">
+                <option value="episode">期数</option><option value="order">题序</option><option value="qustIndx">题号</option>
+                <option value="inlineImage">有无图片</option><option value="answer">答案</option>
+                <option value="parseImage">解析有无图片</option><option value="countdown">倒计时</option>
+              </select>
+            </div>
+            <div class="col-sm-2">
+              <select class="form-control" name="orderArr">
+                 <option value="1">顺序</option><option value="-1">倒序</option>
+               </select>
+            </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</template>

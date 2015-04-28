@@ -1,0 +1,57 @@
+<template name="anserQust">
+  {{#each itemBank}}
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">第{{episode}}场第{{order}}题</h3>
+      </div>
+      <div class="panel-body h2">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        {{question}}
+        {{#if inImage}}
+          <p>
+            <img src={{imageIn}} width="300" alt="图示" class="img-responsive img-thumbnail center-block" />
+          </p>
+        {{/if}}
+      </div>
+      <form id="reply-qust">
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-success">
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadiosA" value="A" />
+                <div>A:{{optionA}}</div>
+              </label>
+            </div>
+          </li>
+          <li class="list-group-item list-group-item-info">
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadiosB" value="B" />
+                B:{{optionB}}
+              </label>
+            </div>
+          </li>
+          <li class="list-group-item list-group-item-warning">
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadiosC" value="C" />
+                C:{{optionC}}
+              </label>
+            </div>
+          </li>
+          <li class="list-group-item list-group-item-danger">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadiosD" value="D" />
+                  D:{{optionD}}
+                </label>
+              </div>
+          </li>
+        </ul>
+          <div class="panel-body">
+            <input class="btn btn-success btn-lg btn-block" type="submit" name="reply_qu" value="提交答案" />
+          </div>
+      </form>
+    </div>
+  {{/each}}
+</template>

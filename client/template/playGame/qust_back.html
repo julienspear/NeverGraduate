@@ -1,0 +1,25 @@
+<template name="qustBack">
+    <div class="row">
+      <div class=" col-sm-8">
+        <ul class="list-group h3">
+          <li class="list-group-item">第{{episode}}场第{{order}}题</li>
+          <li class="list-group-item">{{question}}</li>
+          <li class="list-group-item">A.{{optionA}}</li>
+          <li class="list-group-item">B.{{optionB}}</li>
+          <li class="list-group-item">C.{{optionC}}</li>
+          <li class="list-group-item">D.{{optionD}}</li>
+          <li class="list-group-item">答案：{{answer}}</li>
+          <li class="list-group-item">解析：{{parse}}</li>
+          <li class="list-group-item">是否上屏：{{active}}</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <ul class="list-group h4">
+          <li class="list-group-item"><p>操作区</p></li>
+          <li class="list-group-item"><button class="btn btn-danger btn-block" id="start-game">预览下一题</button></li>
+          <li class="list-group-item"><button class="btn btn-danger btn-block" id="change-qust">选手开始答此题</button></li>
+          <li class="list-group-item"><button class="btn btn-danger btn-block" id="time-out">时间到</button></li>
+        </ul>
+      </div>
+    </div>
+</template>

@@ -1,0 +1,90 @@
+<template name="qustItem">
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h3 class="panel-title">《同学会》题库修改</h3>
+    </div>
+    <div class="panel-body">
+    <form class="form-horizontal" id="update-item">
+      <div class="form-group">
+         <label for="season" class="col-sm-1 control-label text-success">播出季</label>
+         <div class="col-sm-5">
+           <input class="form-control" type="text" name="season" value="{{season}}" />
+         </div>
+         <label for="episode" class="col-sm-1 control-label text-success">场次</label>
+         <div class="col-sm-5">
+           <input class="form-control" name="episode" type="text" value="{{episode}}" />
+         </div>
+      </div>
+      <div class="form-group">
+         <label for="order" class="col-sm-1 control-label text-success">题序</label>
+         <div class="col-sm-5">
+           <input class="form-control" type="text" name="order" value="{{order}}" />
+         </div>
+         <label for="qustIndx" class="col-sm-1 control-label text-success">题号</label>
+         <div class="col-sm-5">
+           <input class="form-control" type="text" name="qustIndx" value="{{qustIndx}}" />
+         </div>
+      </div>
+      <div class="form-group">
+         <label for="question" class="col-sm-1 control-label text-success">题目内容</label>
+         <div class="col-sm-11">
+           <textarea name="question" value="{{question}}" class="form-control" rows="5"></textarea>
+         </div>
+      </div>
+      <div class="form-group">
+         <label for="optionA" class="col-sm-1 control-label text-success">选项A</label>
+         <div class="col-sm-3">
+           <input class="form-control" type="text" name="optionA" value="{{optionA}}" />
+         </div>
+         <label for="optionB" class="col-sm-1 control-label text-success">选项B</label>
+         <div class="col-sm-3">
+           <input class="form-control" type="text" name="optionB" value="{{optionB}}" />
+         </div>
+         <label for="optionC" class="col-sm-1 control-label text-success">选项C</label>
+         <div class="col-sm-3">
+           <input class="form-control" type="text" name="optionC" value="{{optionC}}" />
+         </div>
+      </div>
+      <div class="form-group">
+        <label for="optionD" class="col-sm-1 control-label text-success">选项D</label>
+        <div class="col-sm-3">
+          <input class="form-control" type="text" name="optionD" value="{{optionD}}" />
+        </div>
+        <label for="inlineImage" class="col-sm-1 control-label text-success">有无图片</label>
+        <div class="col-sm-3">
+          <input class="form-control" type="text" name="inlineImage" value="{{inlineImage}}" />
+        </div>
+         <label for="answer" class="col-sm-1 control-label text-success">答案</label>
+         <div class="col-sm-3">
+           <input class="form-control" type="text" name="answer" value="{{answer}}" />
+         </div>
+      </div>
+      <div class="form-group">
+         <label for="parse" class="col-sm-1 control-label text-success">题目解析</label>
+         <div class="col-sm-11">
+           <textarea name="parse" value="{{parse}}" class="form-control" rows="5"></textarea>
+          </div>
+      </div>
+      <div class="form-group">
+         <label for="parseImage" class="col-sm-1 control-label text-success">解析有无图片</label>
+         <div class="col-sm-2">
+           <input class="form-control" type="text" name="parseImage" value="{{parseImage}}" />
+         </div>
+         <label for="countdown" class="col-sm-1 control-label text-success">倒计时</label>
+         <div class="col-sm-2">
+           <input class="form-control" type="text" name="countdown" value="{{countdown}}" />
+         </div>
+         <div class="col-sm-2">
+           <input class="form-control" type="text" name="active" value="{{active}}" />
+         </div>
+         <div class="col-sm-2">
+           <button  class="delete btn btn-danger btn-block">删除</button>
+         </div>
+         <div class="col-sm-2">
+           <input class="btn btn-warning btn-block" type="submit" name="update" value="修改" />
+         </div>
+      </div>
+    </form>
+  </div>
+</div>
+</template>

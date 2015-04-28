@@ -1,0 +1,44 @@
+<template name="startGame">
+  <div class="jumbotron">
+    <div class="container">
+      <h1><small>欢迎加入</small>《同学会》！</h1>
+      <p>...</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a></p>
+    </div>
+  </div>
+  <h3 class="list-group-item-heading text-primary">欢迎加入《同学会》直播现场！</h3>
+  <form class="form-horizontal" id="new-setting">
+    <div class="form-group has-success">
+       <label for="currSeason" class="col-sm-2 control-label">播出季：</label>
+       <div class="col-sm-8">
+         <select class="form-control" name="currSeason">
+            <option>九章算术</option>
+            <option>上元灯会</option>
+            <option>拍案惊奇</option>
+            <option>渔樵问答</option>
+          </select>
+       </div>
+    </div>
+    <div class="form-group has-error">
+       <label for="currEpisode" class="col-sm-2 control-label">场次：</label>
+       <div class="col-sm-8">
+         <select class="form-control" name="currEpisode">
+            <option>1</option><option>2</option><option>3</option><option>4</option>
+            <option>5</option><option>6</option><option>7</option><option>8</option>
+            <option>9</option><option>10</option><option>11</option><option>12</option>
+          </select>
+       </div>
+    </div>
+    <div class="form-group has-warning">
+       <label for="playerCount" class="col-sm-2 control-label">参赛人数：</label>
+       <div class="col-sm-8">
+         <input class="form-control" type="text" name="playerCount" placeholder="参赛人数" />
+       </div>
+    </div>
+    <div class="form-group">
+       <div class="col-sm-offset-8 col-sm-2">
+         <input class="btn btn-info btn-block" type="submit" name="start" value="确定" />
+       </div>
+    </div>
+  </form>
+</template>
