@@ -1,24 +1,26 @@
 <template name="anserQust">
   {{#each itemBank}}
-    <div class="panel panel-info">
-      <div class="panel-heading">
-        <h3 class="panel-title">第{{episode}}场第{{order}}题</h3>
-      </div>
-      <div class="panel-body h2">
-        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-        {{question}}
+    <div class="masthead">
+      <h1>第{{episode}}场第{{order}}题</h1>
+    </div>
+      <div class="heading" id="every-question">
+        <div class="col">
+          <p><h1><span class="icon">&#9997;</span><small>{{question}}</small></h1></p>
+        </div>
         {{#if inImage}}
-          <p>
-            <img src={{imageIn}} width="300" alt="图示" class="img-responsive img-thumbnail center-block" />
-          </p>
+          <div class="col">
+            <blockquote>
+              <p><img src={{imageIn}} width="300" alt="图示" class="img-responsive img-thumbnail center-block"></p>
+            </blockquote>
+          </div>
         {{/if}}
       </div>
       <form id="reply-qust">
-        <ul class="list-group">
+        <ul class="list-group section">
           <li class="list-group-item list-group-item-success">
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadiosA" value="A" />
+                <input type="radio" name="optionsRadios" id="optionsRadiosA" value="A">
                 <div>A:{{optionA}}</div>
               </label>
             </div>
@@ -26,7 +28,7 @@
           <li class="list-group-item list-group-item-info">
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadiosB" value="B" />
+                <input type="radio" name="optionsRadios" id="optionsRadiosB" value="B">
                 B:{{optionB}}
               </label>
             </div>
@@ -34,7 +36,7 @@
           <li class="list-group-item list-group-item-warning">
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadiosC" value="C" />
+                <input type="radio" name="optionsRadios" id="optionsRadiosC" value="C">
                 C:{{optionC}}
               </label>
             </div>
@@ -42,16 +44,15 @@
           <li class="list-group-item list-group-item-danger">
               <div class="radio">
                 <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadiosD" value="D" />
+                  <input type="radio" name="optionsRadios" id="optionsRadiosD" value="D">
                   D:{{optionD}}
                 </label>
               </div>
           </li>
         </ul>
           <div class="panel-body">
-            <input class="btn btn-success btn-lg btn-block" type="submit" name="reply_qu" value="提交答案" />
+            <input class="btn btn-success btn-lg btn-block" type="submit" name="reply_qu" value="提交答案">
           </div>
       </form>
-    </div>
   {{/each}}
 </template>
