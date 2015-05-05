@@ -1,44 +1,27 @@
 <template name="header">
-  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
-          <span class="sr-only">导航</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="{{pathFor 'startGame'}}">同学会</a>
-      </div>
-      <div class="collapse navbar-collapse" id="navigation">
-        <ul class="nav navbar-nav">
-          <li class="">
-            <a href="{{pathFor 'anserQust'}}">答题</a>
-          </li>
-          <li class="">
-            <a href="{{pathFor 'gameMaster'}}">切题</a>
-          </li>
-          <li class="">
-            <a href="{{pathFor 'qustList'}}">题库</a>
-          </li>
-          <li class="">
-            <a href="{{pathFor 'settingIn'}}">参数</a>
-          </li>
-          <li class="">
-            <a href="{{pathFor 'score'}}">得分</a>
-          </li>
-          <li class="">
-            <a href="{{pathFor 'playerView'}}">实验</a>
-          </li>
-          <li class="">
-            <a href="{{pathFor 'playerWaiting'}}">等</a>
-          </li>
-
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            {{> loginButtons}}
-        </ul>
-      </div>
+  <nav class="navbar navbar-inverse navbar-static-top container-fluid" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+        <span class="sr-only">切换导航</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{pathFor 'startGame'}}"><img src="/ico/favicon.png" alt="同学会"></a>
+    </div>
+    <div class="collapse navbar-collapse"  id="navigation">
+      <ul class="nav navbar-nav">
+        <li><a href="{{pathFor 'anserQust'}}">答题</a></li>
+        <li><a href="{{pathFor 'gameMaster'}}">切题</a></li>
+        <li><a href="{{pathFor 'qustList'}}">题库</a></li>
+        <li><a href="{{pathFor 'settingIn'}}">参数</a></li>
+        <li><a href="{{pathFor 'score'}}">得分</a></li>
+        <li><a href="{{pathFor 'playerView'}}">实验</a></li>
+        <li><a href="{{pathFor 'playerWaiting'}}">等</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        {{> loginButtons}}
+      </ul>
     </div>
   </nav>
 </template>
