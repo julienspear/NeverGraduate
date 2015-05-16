@@ -1,5 +1,3 @@
-Session.setDefault('anserOrder', 0);
-
 Template.anserQust.events({
   "submit #reply-qust": function () {
     Session.set('playView', 'Ed');
@@ -29,7 +27,6 @@ Template.anserQust.events({
 
     event.target.optionsRadios.value = "";
 
-    Router.go('waiting');
   }
 });
 

@@ -1,0 +1,20 @@
+<template name="score1">
+  {{> header1}}
+  <div class="list-group">
+    {{#each glblSet}}
+    <div class="list-group-item col-sm-2 playAn">
+        <div class="row-picture">
+            <img class="img-circle" alt={{playerName}} src={{playImage}} width=100px>
+        </div>
+        <div class="row-content">
+            <p class="list-group-item-heading">{{playerName}}：{{totalScore}}分</p>
+            {{#if anLight}}
+              <p class="list-group-item-text redLight">交卷</p>
+            {{else}}
+              <p class="list-group-item-text greenLight">思考中</p>
+            {{/if}}
+        </div>
+    </div>
+  {{/each}}
+  </div>
+</template>

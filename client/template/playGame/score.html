@@ -1,14 +1,15 @@
 <template name="score">
+{{> header}}
   <div class="list-group">
     {{#each glblSet}}
-    <div class="list-group-item col-sm-3">
+    <div class="list-group-item col-sm-2">
         <div class="row-picture">
             <img class="img-circle" alt={{playerName}} src={{playImage}} width=100px>
         </div>
         <div class="row-content">
-            <h4 class="list-group-item-heading">{{playerName}}</h4>
+            <p class="list-group-item-heading">{{playerName}}</p>
             {{#if anLight}}
-              <h3 class="list-group-item-text">交卷</h3>
+              <p class="list-group-item-text redLight">交卷</p>
             {{/if}}
             <h3 class="list-group-item-text">{{playerAnser}}</h3>
         </div>

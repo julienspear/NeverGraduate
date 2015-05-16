@@ -1,11 +1,12 @@
 <template name="gameMaster">
+  {{> header}}
   <div class="panel panel-primary">
     <div class="panel-heading">
       <h3 class="panel-title">《同学会》题库切换</h3>
     </div>
     <div class="panel-body">
-      <button  class="btn btn-danger btn-block" id="start-game">比赛开始</button>
-      {{#each itemBank}}
+      <!-- <button  class="btn btn-danger btn-block" id="start-game1">比赛开始</button> -->
+            {{#each itemBank}}
         {{> qustBack}}
       {{/each}}
     </div>

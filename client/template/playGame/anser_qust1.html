@@ -1,0 +1,55 @@
+<template name="anserQust1">
+{{> header1}}
+{{#each itemBank}}
+  <section>
+    <h1>第{{episode}}场第{{order}}题</h1>
+    <div class="section">
+      <div class="col">
+        <p>{{question}}</p>
+      </div>
+      {{#if inImage}}
+      <div class="col">
+        <img src={{imageIn}} width="400" alt="图示" class="img-responsive img-thumbnail" />
+      </div>
+      {{/if}}
+    </div>
+  </section>
+  <form id="reply-qust">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-success">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadiosA" value="A" />
+            <div>A:{{optionA}}</div>
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-info">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadiosB" value="B" />
+            B:{{optionB}}
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-warning">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadiosC" value="C" />
+            C:{{optionC}}
+          </label>
+        </div>
+      </li>
+      <li class="list-group-item list-group-item-danger">
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadiosD" value="D" />
+              D:{{optionD}}
+            </label>
+          </div>
+      </li>
+      <input class="btn btn-info btn-block" type="submit" id="reply_qu" value="提交答案" />
+    </ul>
+  </form>
+{{/each}}
+</template>

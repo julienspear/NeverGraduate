@@ -1,6 +1,7 @@
-Session.setDefault('qustOrder', 0);
-Session.setDefault('gameEp', '10');
+Session.setDefault('qustOrder', 1);
+Session.setDefault('gameEp', '1');
 Session.setDefault('gradeScore', 24);
+Session.setDefault('gradeScore1', 24);
 Session.setDefault('oderPlay', 1);
 Session.setDefault('gameSeason', 0);
 Session.setDefault('playView', 'Ing');
@@ -12,10 +13,8 @@ Template.startGame.events({
     var playerCount = event.target.playerCount.value;
     Session.set('gameSeason', currSeason);
     Session.set('gameEp', currEpisode);
-    Session.set('gradeScore',playerCount);
-    Session.set('gradeScore',String(Session.get('gradeScore')));
-    Session.set('gradeScore1',playerCount);
-    Session.set('gradeScore1',String(Session.get('gradeScore1')));
+    Session.set('gradeScore', playerCount);
+    Session.set('gradeScore1', playerCount);
 
     // Clear form
     event.target.currSeason.value = "";
