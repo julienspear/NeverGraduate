@@ -21,6 +21,8 @@ Template.qustList.events({
 
 Template.qustList.helpers({
   itemBank: function () {
-  return ItemBank.find({episode: Session.get('searchEp')}, {sort: {"Session.get('orderK')": Session.get('orderA') }});
+  <!-- return ItemBank.find({order: Session.get('searchEp')}, {sort: {"Session.get('orderK')": Session.get('orderA') }}); -->
+  return ItemBank.find({season: Session.get('searchEp'),order: Session.get('searchKS')}, {sort: {order: 1}});
+
   }
 });

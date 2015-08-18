@@ -3,30 +3,21 @@
   <h1 class="list-group-item-heading text-primary">欢迎加入《同学会》直播现场！</h1>
   <form class="form-horizontal" id="new-setting">
     <div class="form-group has-success">
-       <label for="currSeason" class="col-sm-2 control-label">播出季：</label>
+       <label for="currSeason" class="col-sm-2 control-label">题型：</label>
        <div class="col-sm-8">
          <select class="form-control" name="currSeason">
-            <option>九章算术</option>
-            <option>上元灯会</option>
-            <option>拍案惊奇</option>
-            <option>渔樵问答</option>
-          </select>
-       </div>
-    </div>
-    <div class="form-group has-error">
-       <label for="currEpisode" class="col-sm-2 control-label">场次：</label>
-       <div class="col-sm-8">
-         <select class="form-control" name="currEpisode">
-            <option>1</option><option>2</option><option>3</option><option>4</option>
-            <option>5</option><option>6</option><option>7</option><option>8</option>
-            <option>9</option><option>10</option><option>11</option><option>12</option>
+            <option>士是非飞</option>
+            <option>士是非飞1</option>
+            <option>三国冷知识</option>
+            <option>体育达人</option>
+            <option>猜谜射虎</option>
           </select>
        </div>
     </div>
     <div class="form-group has-warning">
-       <label for="playerCount" class="col-sm-2 control-label">参赛人数：</label>
+       <label for="playerOrder" class="col-sm-2 control-label">题序：</label>
        <div class="col-sm-8">
-         <input class="form-control" type="text" name="playerCount" placeholder="参赛人数" />
+         <input class="form-control" type="number" name="playerOrder" placeholder="题序" />
        </div>
     </div>
     <div class="form-group">
@@ -35,4 +26,5 @@
        </div>
     </div>
   </form>
+  {{> qipan}}
 </template>

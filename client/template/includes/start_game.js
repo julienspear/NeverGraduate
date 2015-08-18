@@ -1,25 +1,18 @@
 Session.setDefault('qustOrder', 1);
-Session.setDefault('gameEp', '1');
-Session.setDefault('gradeScore', 24);
-Session.setDefault('gradeScore1', 24);
 Session.setDefault('oderPlay', 1);
-Session.setDefault('gameSeason', 0);
 Session.setDefault('playView', 'Ing');
+Session.setDefault('gameSeason', '士是非飞1');
 
 Template.startGame.events({
   "submit #new-setting": function () {
     var currSeason = event.target.currSeason.value;
-    var currEpisode = event.target.currEpisode.value;
-    var playerCount = event.target.playerCount.value;
+    var playerOrder = Number(event.target.playerOrder.value);
     Session.set('gameSeason', currSeason);
-    Session.set('gameEp', currEpisode);
-    Session.set('gradeScore', playerCount);
-    Session.set('gradeScore1', playerCount);
+    Session.set('qustOrder', playerOrder);
 
     // Clear form
     event.target.currSeason.value = "";
-    event.target.currEpisode.value = "";
-    event.target.playerCount.value = "";
+    event.target.playerOrder.value = "";
 
     // Prevent default form submit
     return false;

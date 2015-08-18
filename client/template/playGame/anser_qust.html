@@ -1,8 +1,7 @@
 <template name="anserQust">
-  {{> header2}}
 {{#each itemBank}}
   <section>
-    <h1>第{{episode}}场第{{order}}题</h1>
+    <h1>士是非飞问题</h1>
     <div class="section">
       <div class="col">
         <p>{{question}}</p>
@@ -48,9 +47,14 @@
             </label>
           </div>
       </li>
-      <li class="list-group-item list-group-item-success">
-        <div class="radio">
-          <p>电视观众发送“题号+答案”至微信平台（公众号：JLETV）即可参与答题</p>
+      <li class="list-group-item">
+        <div class="col">
+          <p>答案：{{answer}}</p>
+        </div>
+      </li>
+      <li class="section">
+        <div class="col">
+          <p>解析：{{parse}}</p>
         </div>
       </li>
     </ul>

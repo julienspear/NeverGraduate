@@ -7,8 +7,8 @@ Template.gameMaster.events({
 
 Template.gameMaster.helpers({
   itemBank: function () {
+    var newSeason = String(Session.get('gameSeason'));
     var newOrder = String(Session.get('qustOrder'));
-    var newEp = String(Session.get('gameEp'));
-    return ItemBank.find({episode: newEp, order: newOrder});
+    return ItemBank.find({season: newSeason, order: newOrder});
   }
 });

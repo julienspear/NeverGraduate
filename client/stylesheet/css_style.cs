@@ -67,7 +67,11 @@ h1 {
   font-size: 2.5rem;
   background-color: rgba(42,52,64,.9);
   }
-h2 { font-size: 2rem; }
+h2 {
+  font-size: 2rem;
+  color: transparent;
+  text-shadow:0 0 6px #F96, -1px -1px  #FFF, 1px -1px  #444;
+}
 h3 { font-size: 1.75rem; }
 h4 { font-size: 1.5rem }
 

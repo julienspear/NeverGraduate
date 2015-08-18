@@ -1,6 +1,181 @@
+html {
+    height: 100%;
+}
+body {
+    background-color: #FFFFFF;
+    color: #404040;
+    font: 12px/1.5 Helvetica,Arial,sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6, p, blockquote, form, fieldset {
+    margin: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input, select, label {
+    vertical-align: middle;
+}
+img {
+    border: medium none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    padding: 0 0 9px;
+}
+h1, h2 {
+    line-height: 36px;
+}
+h3 {
+    line-height: 27px;
+}
+h4, h5, h6 {
+    line-height: 18px;
+}
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+}
+h4 {
+    font-size: 14px;
+}
+h5, h6 {
+    font-size: 12px;
+}
+ul, ol {
+    margin: 0 0 18px;
+    padding: 0;
+}
+ul li, ol li {
+    margin-left: 25px;
+}
+ul ul, ul ol, ol ol, ol ul {
+    margin-bottom: 0;
+}
+ul.nostyle {
+    list-style: none outside none;
+}
+ul.nostyle li {
+    margin-left: 0;
+}
+ul.inline-style {
+    list-style: none outside none;
+    margin-bottom: 0;
+}
+ul.inline-style li {
+    display: inline;
+    float: left;
+    margin-left: 0;
+}
+dl {
+    margin-bottom: 18px;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin: 0 0 0 9px;
+    padding: 0;
+}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+    overflow: hidden;
+}
+.clearfix {
+}
+
+/*layout*/
+.page {
+    height: auto !important;
+    min-height: 100%;
+    min-width: 1000px;
+    width: 100%;
+}
+#header, #container, #footer {
+    clear: both;
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+}
+#container {
+    padding: 0px 0;
+}
+#main, #aside_right, #aside_left {
+    float: left;
+}
+.inner {
+    margin: 0 10px;
+}
+#main {
+    width: 100%;
+}
+#aside_left {
+    width: 300px;
+}
+.aside-left #main {
+    width: 60%;
+}
+.aside-right #main {
+    width: 60%;
+}
+#aside_right {
+    width: 40%;
+}
+.two-asides #aside_left, .two-asides #aside_right {
+    width: 200px;
+}
+.two-asides #main {
+    width: 600px;
+}
+
+/*style*/
+#header {
+    background-color: #EDEDED;
+}
+#header_wrap {
+    background-color: #EDEDED;
+}
+#footer {
+    background-color: #E1DACF;
+}
+#footer_wrap {
+    background-color: #E1DACF;
+}
+#container {
+    background-color: #CCCCCC;
+}
+#main {
+    background-color: #000000;
+    /*background-image:url(r.gif);
+    background-size:cover;*/
+}
+#aside_left, #aside_right {
+    background-color: #EFEFEF;
+}
+
+/*
 body {
   background-image:url(/bg.jpg);
   background-size:cover;
+  margin: 0;
 }
 nav {
   margin: 0;
@@ -39,3 +214,5 @@ section {
 .cent{
   text-align: center;
 }
+
+*/

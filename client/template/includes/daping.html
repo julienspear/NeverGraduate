@@ -1,0 +1,35 @@
+<template name="daping">
+  <div class="page aside-left">
+      <!--container begin-->
+      <section id="container" class="clearfix">
+          <!--main begin-->
+          <section id="main">
+              <div class="inner">
+                  <h2>{{blueOrRed}}内容区域</h2>
+                  <article>
+                    {{> qipan}}
+                  </article>
+              </div>
+          </section>
+
+          <!--aside_right begin-->
+          <section id="aside_right" class="aside">
+              <div class="inner">
+                  <h2>右边栏区域</h2>
+
+              </div>
+          </section>
+       </section>
+       <!--footer begin-->
+       <footer id="footer">
+      <div class="inner">
+        <input id="cubeblue2" class="btn btn-success" type="submit" name="blue2" value="蓝退" />
+        <input id="cubeblue1" class="btn btn-success" type="submit" name="blue1" value="蓝走" />
+        <input id="cubered2" class="btn btn-success" type="submit" name="red2" value="红退" />
+        <input id="cubered1" class="btn btn-success" type="submit" name="red1" value="红走" />
+      </div>
+      <div class="inner">
+      {{selectBlue}}</div>
+       </footer>
+  </div>
+</template>
