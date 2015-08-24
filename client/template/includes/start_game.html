@@ -1,11 +1,15 @@
 <template name="startGame">
   {{> header}}
-  <h1 class="list-group-item-heading text-primary">欢迎加入《同学会》直播现场！</h1>
+  <h1 class="list-group-item-heading text-primary">欢迎加入《同学会》这箱有礼直播现场！</h1>
   <form class="form-horizontal" id="new-setting">
     <div class="form-group has-success">
        <label for="currSeason" class="col-sm-2 control-label">题型：</label>
        <div class="col-sm-8">
          <select class="form-control" name="currSeason">
+           <option>这箱有礼</option>
+           <option>综艺大观</option>
+           <option>军事</option>
+           <option>艺术人生</option>
             <option>士是非飞</option>
             <option>士是非飞1</option>
             <option>三国冷知识</option>
@@ -26,5 +30,4 @@
        </div>
     </div>
   </form>
-  {{> qipan}}
 </template>

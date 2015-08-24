@@ -5,7 +5,7 @@ Author: Paul Hayes
 */
 
 #experiment {
-    min-height: 800px;
+    min-height: 768px;
 }
 
 .demoL {
@@ -15,7 +15,7 @@ Author: Paul Hayes
 
 .cube {
     position: relative;
-    left:  35%;
+    left: 30.2%;
     top: 100px;
 }
 
@@ -30,110 +30,121 @@ Author: Paul Hayes
 
 .cube.two {
     top: 158px;
-    left:  35%;
+    left: 30.2%;
     margin-left: -100px;
 }
 
 .cube.three {
     top: 216px;
-    left:  35%;
+    left: 30.2%;
     margin-left: -200px;
 }
 
 .cube.four {
     top: 274px;
-    left:  35%;
+    left: 30.2%;
     margin-left: -300px;
 }
 
 .cube.five {
     top: 390px;
-    left:  35%;
+    left: 30.2%;
     margin-left: -300px;
 }
 
 .cube.six {
     top: 448px;
-    left:  35%;
+    left: 30.2%;
     margin-left: -200px;
 }
 
 .cube.seven {
     top: 506px;
-    left:  35%;
+    left: 30.2%;
     margin-left: -100px;
 }
 
 .cube.eight {
     top: 564px;
-    left:  35%;
+    left: 30.2%;
     margin-left: 0px;
 }
 
 .cube.nine {
     top: 564px;
-    left:  35%;
+    left: 30.2%;
     margin-left: 200px;
 }
 
 .cube.ten {
     top: 506px;
-    left:  35%;
+    left: 30.2%;
     margin-left: 300px;
 }
 
 .cube.eleven {
     top: 448px;
-    left:  35%;
+    left: 30.2%;
     margin-left: 400px;
 }
 
 .cube.twelve {
     top: 390px;
-    left:  35%;
+    left: 30.2%;
     margin-left: 500px;
 }
 
 .cube.thirteen {
     top: 274px;
-    left:  35%;
+    left: 30.2%;
     margin-left: 500px;
 }
 .cube.fourteen {
     top: 216px;
-    left:  35%;
+    left: 30.2%;
     margin-left: 400px;
 }
 
 .cube.fifteen {
     top: 158px;
-    left:  35%;
+    left: 30.2%;
     margin-left: 300px;
 }
 
 .cube.sixteen {
     top: 100px;
-    left:  35%;
+    left: 30.2%;
     margin-left: 200px;
 }
 
 .cube.seventeen {
     top: 303px;
-    left:  35%;
+    left: 30.2%;
     margin-left: 100px;
 }
 
 .cube.eighteen {
     top: 416px;
-    left:  35%;
+    left: 30.2%;
     margin-left: -200px;
 }
 
 .cube.nineteen {
     top: 416px;
-    left:  35%;
+    left: 30.2%;
     margin-left: -200px;
 }
+
+.rightFaceBack,
+.leftFaceBack,
+.bottonFace div {
+    padding: 0px;
+    width: 100px;
+    height: 100px;
+    border:1px solid rgba(160, 32, 240, .9) ;
+}
+
+
 
 .rightFace,
 .leftFace,
@@ -141,13 +152,22 @@ Author: Paul Hayes
     padding: 10px;
     width: 100px;
     height: 100px;
-    border:1px solid #F00;
+    border:1px solid rgba(255, 97, 3, .9) ;
 }
 
 .rightFace,
 .leftFace,
-.topFace {
+.topFace,
+.rightFaceBack,
+.leftFaceBack,
+.bottonFace  {
     position: absolute;
+}
+
+.cube:hover .rightFaceBack,
+.cube:hover .leftFaceBack,
+.cube:hover .bottonFace div {
+    background-color: #ffc;
 }
 
 .cube:hover .rightFace,
@@ -156,9 +176,15 @@ Author: Paul Hayes
     background-color: #ffc;
 }
 
-.cube:hover .rightFace,
-.cube:hover .leftFace,
-.cube:hover .topFace div {
+.cube:hover .rightFaceBack:hover,
+.cube:hover .leftFaceBack:hover,
+.cube:hover .bottonFace:hover div {
+    background-color: #ffa;
+}
+
+.cube:hover .rightFace:hover,
+.cube:hover .leftFace:hover,
+.cube:hover .topFace:hover div {
     background-color: #ffa;
 }
 
@@ -168,7 +194,7 @@ Author: Paul Hayes
     -o-transform: skew(0deg, 30deg);
     -ms-transform: skew(0deg, 30deg);
     transform: skew(0deg, 30deg);
-    background-color: #ccc;
+    background-color: rgba(244, 164, 96, 0.9);
 }
 
 .rightFace {
@@ -177,47 +203,9 @@ Author: Paul Hayes
     -o-transform: skew(0deg, -30deg);
     -ms-transform: skew(0deg, -30deg);
     transform: skew(0deg, -30deg);
-    background-color: #ddd;
+    background-color: rgba(255, 125, 64, 0.9);
     left: 100px;
 }
-
-.topFace div {
-    -webkit-transform: skew(0deg, -30deg) scale(1, 1.16);
-    -moz-transform: skew(0deg, -30deg) scale(1, 1.16);
-    -o-transform: skew(0deg, -30deg) scale(1, 1.16);
-    -ms-transform: skew(0deg, -30deg) scale(1, 1.16);
-    transform: skew(0deg, -30deg) scale(1, 1.16);
-    background-color: #eee;
-    font-size: 0.862em;
-    /*background-image:url(e.gif);
-    background-size:contain;*/
-}
-
-.topFaceBlue div{
-    -webkit-transform: skew(0deg, -30deg) scale(1, 1.16);
-    -moz-transform: skew(0deg, -30deg) scale(1, 1.16);
-    -o-transform: skew(0deg, -30deg) scale(1, 1.16);
-    -ms-transform: skew(0deg, -30deg) scale(1, 1.16);
-    transform: skew(0deg, -30deg) scale(1, 1.16);
-    background-color: #00e;
-    font-size: 0.862em;
-    /*background-image:url(123.jpg);
-    background-size:contain;*/
-}
-
-.leftFaceRed {
-
-    background-color: #d00;
-    font-size: 0.862em;
-}
-
-.rightFaceRed {
-    background-color: #d00;
-    left: 100px;
-    font-size: 0.862em;
-
-}
-
 
 .topFace {
     -webkit-transform: rotate(60deg);
@@ -228,6 +216,97 @@ Author: Paul Hayes
     top: -79px;
     left: 50px;
 }
+
+.topFace div {
+    -webkit-transform: skew(0deg, -30deg) scale(1, 1.16);
+    -moz-transform: skew(0deg, -30deg) scale(1, 1.16);
+    -o-transform: skew(0deg, -30deg) scale(1, 1.16);
+    -ms-transform: skew(0deg, -30deg) scale(1, 1.16);
+    transform: skew(0deg, -30deg) scale(1, 1.16);
+    background-color: rgba(240, 230, 140, 0.9);
+    font-size: 0.862em;
+    /*background-image:url(e.gif);
+    background-size:contain;*/
+}
+
+.bottonFace {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+    top: 21px;
+    left: 50px;
+}
+
+.bottonFace div {
+    -webkit-transform: skew(0deg, -30deg) scale(1, 1.16);
+    -moz-transform: skew(0deg, -30deg) scale(1, 1.16);
+    -o-transform: skew(0deg, -30deg) scale(1, 1.16);
+    -ms-transform: skew(0deg, -30deg) scale(1, 1.16);
+    transform: skew(0deg, -30deg) scale(1, 1.16);
+    background-color: rgba(240, 230, 140, 0.5);
+    font-size: 0.862em;
+    /*background-image:url(e.gif);
+    background-size:contain;*/
+}
+.rightFaceBack {
+    -webkit-transform: skew(0deg, 30deg);
+    -moz-transform: skew(0deg, 30deg);
+    -o-transform: skew(0deg, 30deg);
+    -ms-transform: skew(0deg, 30deg);
+    transform: skew(0deg, 30deg);
+    background-color: rgba(244, 164, 96, 0.5);
+    left: 100px;
+    top: -58px;
+}
+
+.leftFaceBack {
+    -webkit-transform: skew(0deg, -30deg);
+    -moz-transform: skew(0deg, -30deg);
+    -o-transform: skew(0deg, -30deg);
+    -ms-transform: skew(0deg, -30deg);
+    transform: skew(0deg, -30deg);
+    background-color: rgba(255, 125, 64, 0.5);
+    top: -58px;
+}
+
+.topFaceBlue div{
+    -webkit-transform: skew(0deg, -30deg) scale(1, 1.16);
+    -moz-transform: skew(0deg, -30deg) scale(1, 1.16);
+    -o-transform: skew(0deg, -30deg) scale(1, 1.16);
+    -ms-transform: skew(0deg, -30deg) scale(1, 1.16);
+    transform: skew(0deg, -30deg) scale(1, 1.16);
+    background-color: rgba(25, 25, 112, 0.8);
+    font-size: 0.862em;
+    /*background-image:url(123.jpg);
+    background-size:contain;*/
+}
+
+.bottonFaceBlue div{
+    -webkit-transform: skew(0deg, -30deg) scale(1, 1.16);
+    -moz-transform: skew(0deg, -30deg) scale(1, 1.16);
+    -o-transform: skew(0deg, -30deg) scale(1, 1.16);
+    -ms-transform: skew(0deg, -30deg) scale(1, 1.16);
+    transform: skew(0deg, -30deg) scale(1, 1.16);
+    background-color: rgba(25, 25, 112, 0.4);
+    font-size: 0.862em;
+    /*background-image:url(123.jpg);
+    background-size:contain;*/
+}
+
+.leftFaceRed {
+    background-color: rgba(227, 23, 13, 0.8);
+    font-size: 0.862em;
+}
+
+.rightFaceRed {
+    background-color: rgba(178, 34, 34, 0.75);
+    left: 100px;
+    font-size: 0.862em;
+
+}
+
 
 /* Optional Animations */
 
