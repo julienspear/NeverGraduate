@@ -1,0 +1,56 @@
+<template name="player2">
+  <div class="page two-asides">
+    <section id="container" class="clearfix">
+      <section id="aside_left" class="aside">
+        <div class="inner">
+          {{#if countdownR}}
+            {{> countdown}}
+          {{else}}
+            {{#if qiangdaC}}
+              {{> qiangdaR}}
+            {{else}}
+              {{> redTeam}}
+            {{/if}}
+          {{/if}}
+          {{> redTeamC}}
+          {{> liuchengB}}
+        </div>
+      </section>
+      <section id="main">
+        <div class="inner">
+          <article>
+            {{> qipan}}
+            {{> anserQust1}}
+          </article>
+        </div>
+      </section>
+      <section id="aside_right" class="aside">
+        <div class="inner">
+          <div class="inner">
+            {{#if countdownB}}
+              {{> countdownBT}}
+            {{else}}
+              {{#if qiangdaB}}
+                {{> qiangdaBC}}
+              {{else}}
+                {{> blueTeam}}
+              {{/if}}
+            {{/if}}
+            {{> blueTeamC}}
+            {{> liuchengB}}
+          </div>
+        </div>
+      </section>
+    </section>
+    {{#if qiangdaSS}}
+      <div class="qiangdaSideR">
+        <input id="qiangdap2" class="btn btn-info btn-lg" type="submit" name="blue" value="抢答2">
+      </div>
+    {{else}}
+    <div class="qiangdaSide">
+      <input id="qiangdap2" class="btn btn-info btn-lg" type="submit" name="blue" value="抢答2">
+    </div>
+    {{/if}}
+
+  </div>
+</template>

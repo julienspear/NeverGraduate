@@ -1,0 +1,54 @@
+<template name="zcr">
+  <div class="page two-asides">
+    <section id="container" class="clearfix">
+      <section id="aside_left" class="aside">
+        <div class="inner">
+          {{#if countdownR}}
+            {{> countdown}}
+          {{else}}
+            {{#if qiangdaC}}
+              {{> qiangdaR}}
+            {{else}}
+              {{> redTeam}}
+            {{/if}}
+          {{/if}}
+          {{> redTeamC}}
+          {{> liuchengB}}
+        </div>
+      </section>
+      <section id="main">
+        <div class="inner">
+          <article>
+            {{> qipan}}
+            {{> anserQust1}}
+          </article>
+        </div>
+      </section>
+      <section id="aside_right" class="aside">
+        <div class="inner">
+          <div class="inner">
+            {{#if countdownB}}
+              {{> countdownBT}}
+            {{else}}
+              {{#if qiangdaB}}
+                {{> qiangdaBC}}
+              {{else}}
+                {{> blueTeam}}
+              {{/if}}
+            {{/if}}
+            {{> blueTeamC}}
+            {{> liuchengB}}
+          </div>
+        </div>
+      </section>
+    </section>
+    <div class="qiangdaSide">
+      <input id="zhanR" class="btn btn-danger btn-lg" type="submit" name="red1" value="红战况">
+      <input id="qiangdaR" class="btn btn-danger btn-lg" type="submit" name="blue" value="红抢答">
+      <input id="qiangdaStart" class="btn btn-info btn-lg" type="submit" name="blue" value="抢答开始">
+      <input id="qiangdaStop" class="btn btn-info btn-lg" type="submit" name="blue" value="抢答停止">
+      <input id="zhanB" class="btn btn-danger btn-lg" type="submit" name="red1" value="蓝战况">
+      <input id="qiangdaB" class="btn btn-danger btn-lg" type="submit" name="blue" value="蓝抢答">
+    </div>
+  </div>
+</template>

@@ -1,0 +1,15 @@
+<template name="qiangdaR">
+<div id="qiangda" class="animated flipInX">
+  <div id="qiangda1" class="titleLi">抢答</div>
+  {{#if qiangp1}}
+    <div  class="qiangdaPL animated flash">1</div>
+  {{else}}
+    <div  class="qiangdaP animated flipInX"></div>
+  {{/if}}
+  {{#if qiangp2}}
+    <div  class="qiangdaPLR animated flash">2</div>
+  {{else}}
+    <div  class="qiangdaPR animated flipInX"></div>
+  {{/if}}
+</div>
+</template>

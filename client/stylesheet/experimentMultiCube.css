@@ -8,11 +8,6 @@ Author: Paul Hayes
     min-height: 768px;
 }
 
-.demoL {
-
-  font: "微软雅黑", "Lucida Grande", "Lucida Sans", Helvetica, Arial, Sans;;
-}
-
 .cube {
     position: relative;
     left: 30.2%;
@@ -225,8 +220,6 @@ Author: Paul Hayes
     transform: skew(0deg, -30deg) scale(1, 1.16);
     background-color: rgba(240, 230, 140, 0.9);
     font-size: 0.862em;
-    /*background-image:url(e.gif);
-    background-size:contain;*/
 }
 
 .bottonFace {
@@ -246,9 +239,6 @@ Author: Paul Hayes
     -ms-transform: skew(0deg, -30deg) scale(1, 1.16);
     transform: skew(0deg, -30deg) scale(1, 1.16);
     background-color: rgba(240, 230, 140, 0.5);
-    font-size: 0.862em;
-    /*background-image:url(e.gif);
-    background-size:contain;*/
 }
 .rightFaceBack {
     -webkit-transform: skew(0deg, 30deg);
@@ -278,9 +268,6 @@ Author: Paul Hayes
     -ms-transform: skew(0deg, -30deg) scale(1, 1.16);
     transform: skew(0deg, -30deg) scale(1, 1.16);
     background-color: rgba(25, 25, 112, 0.8);
-    font-size: 0.862em;
-    /*background-image:url(123.jpg);
-    background-size:contain;*/
 }
 
 .bottonFaceBlue div{
@@ -290,21 +277,15 @@ Author: Paul Hayes
     -ms-transform: skew(0deg, -30deg) scale(1, 1.16);
     transform: skew(0deg, -30deg) scale(1, 1.16);
     background-color: rgba(25, 25, 112, 0.4);
-    font-size: 0.862em;
-    /*background-image:url(123.jpg);
-    background-size:contain;*/
 }
 
 .leftFaceRed {
     background-color: rgba(227, 23, 13, 0.8);
-    font-size: 0.862em;
 }
 
 .rightFaceRed {
     background-color: rgba(178, 34, 34, 0.75);
     left: 100px;
-    font-size: 0.862em;
-
 }
 
 
@@ -324,7 +305,7 @@ Author: Paul Hayes
     -o-transform: translate(101px,58px);
     -ms-transform: translate(101px,58px);
     transform: translate(101px,58px);
-}*/
+}
 
 .cube:active {
     -webkit-transform: translate(0px,58px);
@@ -332,7 +313,7 @@ Author: Paul Hayes
     -o-transform: translate(0px,58px);
     -ms-transform: translate(0px,58px);
     transform: translate(0px,58px);
-}
+}*/
 
 .cubeAct {
     -webkit-transform: translate(0px,58px);
@@ -342,10 +323,10 @@ Author: Paul Hayes
     transform: translate(0px,58px);
 }
 
-.cube.seventeen:active {
+/*.cube.seventeen:active {
     -webkit-transform: translate(0px,-100px);
     -moz-transform: translate(0px,-100px);
     -o-transform: translate(0px,-100px);
     -ms-transform: translate(0px,-100px);
-    transform: translate(0px,-100px);
+    transform: translate(0px,-100px);*/
 }

@@ -1,0 +1,57 @@
+<template name="vcr">
+  <div class="page two-asides">
+    <section id="containerV" class="clearfix">
+      <section id="mainV">
+        <div class="inner">
+          <article>
+            {{> qipan}}
+            {{> anserQust1}}
+          </article>
+        </div>
+      </section>
+      <section id="aside_leftV" class="aside">
+        <div class="inner">
+          {{#if countdownR}}
+            {{> countdown}}
+          {{else}}
+            {{#if qiangdaC}}
+              {{> qiangdaR}}
+            {{else}}
+              {{> redTeam}}
+            {{/if}}
+          {{/if}}
+          {{> redTeamC}}
+          {{> liuchengB}}
+        </div>
+      </section>
+      <section id="aside_rightV" class="aside">
+        <div class="inner">
+          <div class="inner">
+            {{#if countdownB}}
+              {{> countdownBT}}
+            {{else}}
+              {{#if qiangdaB}}
+                {{> qiangdaBC}}
+              {{else}}
+                {{> blueTeam}}
+              {{/if}}
+            {{/if}}
+            {{> blueTeamC}}
+            {{> liuchengB}}
+          </div>
+        </div>
+      </section>
+    </section>
+    <div id="vcrCt">
+      <input id="zhanR" class="btn btn-danger" type="submit" name="red1" value="红战况">
+      <input id="qiangdaR" class="btn btn-danger" type="submit" name="blue" value="红抢答">
+      <input id="cubered2" class="btn btn-warning" type="submit" name="red2" value="红退">
+      <input id="cubered1" class="btn btn-warning" type="submit" name="red1" value="红走">
+      <input id="aside_rtV" class="btn btn-success" type="submit" name="blue1" value="战况">
+      <input id="zhanB" class="btn btn-danger" type="submit" name="red1" value="蓝战况">
+      <input id="qiangdaB" class="btn btn-danger" type="submit" name="blue" value="蓝抢答">
+      <input id="cubeblue2" class="btn btn-warning" type="submit" name="blue2" value="蓝退">
+      <input id="cubeblue1" class="btn btn-warning" type="submit" name="blue1" value="蓝走">
+    </div>
+  </div>
+</template>

@@ -5,7 +5,6 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    text-align: left;
 }
 h1, h2, h3, h4, h5, h6, p, blockquote, form, fieldset {
     margin: 0;
@@ -49,62 +48,6 @@ p {
     text-shadow: rgba(0, 0, 0, 0.298039) -5px 5px 5px;
 }
 
-h3 {
-    line-height: 32px;
-}
-h4, h5, h6 {
-    line-height: 18px;
-}
-h1 {
-    font-size: 24px;
-}
-h2 {
-    font-size: 20px;
-}
-h3 {
-    font-size: 16px;
-}
-h4 {
-    font-size: 14px;
-}
-h5, h6 {
-    font-size: 12px;
-}
-ul, ol {
-    margin: 0 0 18px;
-    padding: 0;
-}
-ul li, ol li {
-    margin-left: 25px;
-}
-ul ul, ul ol, ol ol, ol ul {
-    margin-bottom: 0;
-}
-ul.nostyle {
-    list-style: none outside none;
-}
-ul.nostyle li {
-    margin-left: 0;
-}
-ul.inline-style {
-    list-style: none outside none;
-    margin-bottom: 0;
-}
-ul.inline-style li {
-    display: inline;
-    float: left;
-    margin-left: 0;
-}
-dl {
-    margin-bottom: 18px;
-}
-dt {
-    font-weight: bold;
-}
-dd {
-    margin: 0 0 0 9px;
-    padding: 0;
-}
 article, aside, dialog, figure, footer, header, hgroup, nav, section {
     display: block;
 }
@@ -123,21 +66,31 @@ article, aside, dialog, figure, footer, header, hgroup, nav, section {
 .page {
     height: auto !important;
     min-height: 100%;
-    min-width: 1000px;
     width: 100%;
 }
 #header, #container, #footer {
     clear: both;
     margin: 0 auto;
     text-align: left;
-    width: 1632px;
     float: left;
 }
 #container {
-    padding: 0px 0;
+    padding: 0px;
     width: 1632px;
     float: left;
 }
+#containerV {
+    padding: 0px;
+    width: 1024px;
+    float: left;
+    background-image: url(abstract-in-white-cubes-402972.jpg);
+    background-size: cover;
+}
+
+#mainV {
+    background-color: rgba(138, 43, 226, 0.6);
+}
+
 #main, #aside_right, #aside_left {
     float: left;
 }
@@ -152,26 +105,39 @@ article, aside, dialog, figure, footer, header, hgroup, nav, section {
     width: 300px;
     height: 768px;
 }
+ #aside_leftV, #aside_rightV {
+    width: 512px;
+    height: 768px;
+}
+ #aside_leftV {
+   background-color: rgba(227, 23, 13, 0.8);
+   position: absolute;
+   top: 0px;
+   left:0px;
+  }
+ #aside_rightV {
+   background-color: rgba(25, 25, 112, 0.8);
+   position: absolute;
+   top: 0px;
+   left: 512px;
+ }
+#vcrCt {
+  float: right;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+ }
 .two-asides #main {
+    width: 1032px;
+    height: 768px;
+}
+.two-asides #mainV {
     width: 1032px;
     height: 768px;
 }
 
 /*style*/
-#header {
-    background-color: #EDEDED;
-}
-#header_wrap {
-    background-color: #EDEDED;
-}
-#footer {
-    background-color: #E1DACF;
-}
-#footer_wrap {
-    background-color: #E1DACF;
-}
 #container {
-    background-color: #CCCCCC;
     background-image:url(abstract-in-white-cubes-402972.jpg);
     background-size:cover;
 }
@@ -201,6 +167,76 @@ article, aside, dialog, figure, footer, header, hgroup, nav, section {
   font-family: "微软雅黑";
   color: rgb(241, 224, 198);
   text-align: center;
+}
+
+.titleA {
+  width: 100%;
+  height: 100px;
+  border-bottom:thick dotted #000;
+  background-color: rgba(138, 43, 226, 0.95);
+  float: left;
+  padding: 6px;
+  font-size: 64px;
+  color: rgba(255, 255, 255, .8);
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 20px gold;
+}
+.quA{
+  width: 100%;
+  background-color: rgba(31, 97, 171, .9);
+  float: left;
+  padding: 5px 50px 5px 50px;
+  font-size: 64px;
+  font-family: "微软雅黑";
+  color: rgb(241, 224, 198);
+  text-align: left;
+}
+.opL{
+  border:2px solid black;
+  width: 50%;
+  background-color: rgba(180, 0, 0, .9);
+  float: left;
+  padding: 5px 20px 5px 60px;
+  font-size: 56px;
+  font-family: "微软雅黑";
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+.opLG{
+  border:2px solid black;
+  width: 50%;
+  background-color: rgba(0, 180, 0, .9);
+  float: left;
+  padding: 5px 20px 5px 60px;
+  font-size: 56px;
+  font-family: "微软雅黑";
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.opR{
+  border:2px solid black;
+  width: 50%;
+  background-color: rgba(180, 0, 0, .9);
+  float: right;
+  padding: 5px 60px 5px 20px;
+  font-size: 56px;
+  font-family: "微软雅黑";
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.opRG{
+  border:2px solid black;
+  width: 50%;
+  background-color: rgba(0, 180, 0, .9);
+  float: right;
+  padding: 5px 60px 5px 20px;
+  font-size: 56px;
+  font-family: "微软雅黑";
+  color: rgb(0, 0, 0);
+  text-align: left;
 }
 
 .titleLiB {
@@ -238,6 +274,30 @@ article, aside, dialog, figure, footer, header, hgroup, nav, section {
   color: rgb(241, 224, 198);
   text-align: center;
 }
+
+.qiangdaSide{
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 128, 167, .4);
+  float: left;
+  padding: 6px;
+  font-size: 48px;
+  font-family: "微软雅黑";
+  color: rgb(241, 224, 198);
+  text-align: center;
+}
+.qiangdaSideR{
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 0, 0, .9);
+  float: left;
+  padding: 6px;
+  font-size: 48px;
+  font-family: "微软雅黑";
+  color: rgb(241, 224, 198);
+  text-align: center;
+}
+
 .leftLi {
   width: 50%;
   height: 70px;
@@ -311,9 +371,75 @@ article, aside, dialog, figure, footer, header, hgroup, nav, section {
   color: rgb(0, 0, 0);
   text-align: center;
 }
+.titleClock {
+  width: 100%;
+  height: 140px;
+  background-color: rgba(241, 224, 198, .9);
+  float: right;
+  padding: 0px;
+  font-size: 100px;
+  font-family: "微软雅黑";
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
 
-.footright {
+.titleClockB {
+  width: 100%;
+  height: 140px;
+  background-color: rgba(0, 0, 0, .9);
+  float: left;
+  padding: 0px;
+  font-size: 100px;
+  font-family: "微软雅黑";
+  color: rgb(241, 224, 198);
+  text-align: center;
+}
+.qiangdaP {
   width: 50%;
+  height: 140px;
+  background-color: rgba(241, 224, 198, .9);
+  float: left;
+  padding: 0px;
+  font-size: 100px;
+  font-family: "微软雅黑";
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.qiangdaPR {
+  width: 50%;
+  height: 140px;
+  background-color: rgba(241, 224, 198, .9);
+  float: right;
+  padding: 0px;
+  font-size: 100px;
+  font-family: "微软雅黑";
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.qiangdaPL {
+  width: 50%;
+  height: 140px;
+  background-color: rgba(241, 0, 0, .9);
+  float: left;
+  padding: 0px;
+  font-size: 100px;
+  font-family: "微软雅黑";
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.qiangdaPLR {
+  width: 50%;
+  height: 140px;
+  background-color: rgba(241, 0, 0, .9);
+  float: right;
+  padding: 0px;
+  font-size: 100px;
+  font-family: "微软雅黑";
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.footright {
+  width: 40%;
   float: right;
   font-size: 32px;
   font-family: "微软雅黑";
@@ -322,10 +448,32 @@ article, aside, dialog, figure, footer, header, hgroup, nav, section {
 }
 
 .footleft {
-  width: 50%;
+  width: 40%;
   float: left;
   font-size: 32px;
   font-family: "微软雅黑";
   color: rgb(0, 0, 0);
   text-align: left;
+}
+
+.footmid {
+  width: 20%;
+  float: left;
+  font-size: 32px;
+  font-family: "微软雅黑";
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.qustIt {
+  background-color: rgba(57, 122, 160, 1);
+  position:relative;
+  left:0px;
+  top: -768px;
+  width: 100%;
+  height: 30%;
+  font-size: 64px;
+  font-family: "微软雅黑";
+  border: 5px;
+  color: #eee;
+  text-shadow: 0px 5px 7px #333;
 }

@@ -1,53 +1,28 @@
 <template name="anserQust1">
-{{#each itemBank}}
-  <section>
-    <h1>士是非飞问题</h1>
-    <div class="section">
-      <div class="col">
-        <p>{{question}}</p>
-      </div>
-      {{#if inImage}}
-      <div class="col">
-        <img src={{imageIn}} width="400" alt="图示" class="img-responsive img-thumbnail" />
-      </div>
+  {{#each itemBank}}
+    <section class="qustIt animated lightSpeedIn">
+      <div class="titleA">《同学会》—这箱有礼</div>
+      <div class="quA">{{question}}</div>
+      {{#if aY}}
+        <div class="opLG animated pulse">A:{{optionA}}</div>
+      {{else}}
+      <div class="opL">A:{{optionA}}</div>
       {{/if}}
-    </div>
-  </section>
-  <form id="reply-qust">
-    <ul class="list-group">
-      <li class="list-group-item list-group-item-success">
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadiosA" value="A" />
-            <div>A:{{optionA}}</div>
-          </label>
-        </div>
-      </li>
-      <li class="list-group-item list-group-item-info">
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadiosB" value="B" />
-            B:{{optionB}}
-          </label>
-        </div>
-      </li>
-      <li class="list-group-item list-group-item-warning">
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadiosC" value="C" />
-            C:{{optionC}}
-          </label>
-        </div>
-      </li>
-      <li class="list-group-item list-group-item-danger">
-          <div class="radio">
-            <label>
-              <input type="radio" name="optionsRadios" id="optionsRadiosD" value="D" />
-              D:{{optionD}}
-            </label>
-          </div>
-      </li>
-    </ul>
-  </form>
-{{/each}}
+      {{#if bY}}
+      <div class="opRG animated pulse">B:{{optionB}}</div>
+      {{else}}
+      <div class="opR">B:{{optionB}}</div>
+      {{/if}}
+      {{#if cY}}
+      <div class="opLG animated pulse">C:{{optionC}}</div>
+      {{else}}
+      <div class="opL">C:{{optionC}}</div>
+      {{/if}}
+      {{#if dY}}
+      <div class="opRG animated pulse">D:{{optionD}}</div>
+      {{else}}
+      <div class="opR">D:{{optionD}}</div>
+      {{/if}}
+    </section>
+  {{/each}}
 </template>
